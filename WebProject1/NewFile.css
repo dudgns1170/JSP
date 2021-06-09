@@ -1,0 +1,31 @@
+@charset "EUC-KR";
+
+
+table {
+      position: absolute;
+      /* 테이블 상하좌우 조정 */
+      left: 500px;
+      top: 350px;
+    }
+font{
+
+	color: blue; 
+border: 1px solid White; 
+}
+
+
+
+@media(max-width:800px ){
+	table {
+      position: absolute;
+      /* 테이블 상하좌우 조정 */
+      left: 500px;
+      top: 350px;
+    }
+font{
+
+	color: black; 
+border: 1px solid White; }
+
+
+	}
