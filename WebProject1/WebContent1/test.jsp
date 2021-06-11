@@ -17,7 +17,7 @@
 <%
 	Class.forName("oracle.jdbc.driver.OracleDriver");
 	Connection conn =DriverManager.getConnection(
-			"jdbc:oracle:thin:@localhost:1521:orccle","ora_user","young");
+			"jdbc:oracle:thin:@localhost:1521:orcl","ora_user","young");
 	Statement stmt = conn.createStatement();
 	
 	ResultSet rs = stmt.executeQuery("select * from employees");

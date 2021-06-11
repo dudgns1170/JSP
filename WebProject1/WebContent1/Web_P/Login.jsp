@@ -23,10 +23,11 @@
       top: 350px;
     }
   </style>
+  <link rel="stylesheet" href="NewFile.css">
 </head>
 
 <body>
-  <form name="Login" action="home.html">
+  <form name="Login" action="home.html" method="get">
     <!-- 전송할 페이지(서버) 지정 -->
     <table>
       <tr>
