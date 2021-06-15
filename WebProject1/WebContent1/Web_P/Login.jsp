@@ -1,15 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>Login Page </title>
-  <script type="text/javascript">
-    //À¯È¿ °Ë»ç
-
-
+  <script type="text/javascript" src="log.js">
   </script>
   <style>
     table,
@@ -18,7 +15,7 @@
 
     table {
       position: absolute;
-      /* Å×ÀÌºí »óÇÏÁÂ¿ì Á¶Á¤ */
+       /* í…Œì´ë¸” ìƒí•˜ì¢Œìš° ì¡°ì • */
       left: 500px;
       top: 350px;
     }
@@ -27,8 +24,8 @@
 </head>
 
 <body>
-  <form name="Login" action="home.html" method="get">
-    <!-- Àü¼ÛÇÒ ÆäÀÌÁö(¼­¹ö) ÁöÁ¤ -->
+  <form action="home.html" method="get" name="log">
+   <!-- ì „ì†¡í•  íŽ˜ì´ì§€(ì„œë²„) ì§€ì • -->
     <table>
       <tr>
         <td colspan="3" align=center bgcolor="">
@@ -39,24 +36,24 @@
       </tr>
 
       <tr>
-        <td>¾ÆÀÌµð : </td>
-        <td><input type="text" name="ID" maxlength="8"></td>
-        <!-- ¾ÆÀÌµð ÀÔ·Â°ª 8ÀÚ¸® Á¦ÇÑ -->
+        <td>ì•„ì´ë”” : </td>
+        <td><input type="text" name="id" maxlength="8"></td>
+         <!-- ì•„ì´ë”” ìž…ë ¥ê°’ 8ìžë¦¬ ì œí•œ -->
       </tr>
       <tr>
-        <td>ºñ¹Ð¹øÈ£ : </td>
+          <td>ë¹„ë°€ë²ˆí˜¸ : </td>
         <td><input type="password" name="pwd" maxlength="8"></td>
-        <!-- ºñ¹Ð¹øÈ£ ÀÔ·Â°ª 8ÀÚ¸® Á¦ÇÑ -->
+         <!-- ë¹„ë°€ë²ˆí˜¸ ìž…ë ¥ê°’ 8ìžë¦¬ ì œí•œ -->
       </tr>
       <tr>
         <td colspan="3" align=center>
           <br>
-          <input type="submit"  value="·Î±×ÀÎ">
-          <!-- <input type="submit" value="·Î±×ÀÎ" <!-- onclick="alert('¾ÆÀÌµð¿Í ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä')">> -->
-          <!-- ·Î±×ÀÎ¹öÆ° ÃßÈÄ type º¯°æ ¿¹Á¤ -->
-          <input type="button" value="¾ÆÀÌµð/ºñ¹Ð¹øÈ£ Ã£±â" onclick="location.href='Find ID password.html' ">
-          <!-- È¸¿ø Á¤º¸ Ã£±â type ÃßÈÄ º¯°æ ¿¹Á¤ -->
-          <input type="button" name="" value="È¸¿ø°¡ÀÔ" onclick="location.href='UserInfo.html'">
+          <input type="submit"  value="ë¡œê·¸ì¸" onclick="return check()">
+           <!-- <input type="submit" value="ë¡œê·¸ì¸" <!-- onclick="alert('ì•„ì´ë””ì™€ ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”')">> -->
+     <!-- ë¡œê·¸ì¸ë²„íŠ¼ ì¶”í›„ type ë³€ê²½ ì˜ˆì • -->
+          <input type="button" value="ì•„ì´ë””/ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°" onclick="location.href='Find ID password.html' ">
+        <!-- íšŒì› ì •ë³´ ì°¾ê¸° type ì¶”í›„ ë³€ê²½ ì˜ˆì • -->
+          <input type="button" name="" value="íšŒì›ê°€ìž…" onclick="location.href='UserInfo.html'">
         </td>
       </tr>
     </table>
