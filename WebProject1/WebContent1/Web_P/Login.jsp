@@ -37,12 +37,12 @@
 
       <tr>
         <td>아이디 : </td>
-        <td><input type="text" name="id" maxlength="8"></td>
+        <td><input type="text" name="id" maxlength="20"></td>
          <!-- 아이디 입력값 8자리 제한 -->
       </tr>
       <tr>
           <td>비밀번호 : </td>
-        <td><input type="password" name="pwd" maxlength="8"></td>
+        <td><input type="password" name="pwd" maxlength="20"></td>
          <!-- 비밀번호 입력값 8자리 제한 -->
       </tr>
       <tr>

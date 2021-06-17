@@ -34,7 +34,7 @@ public class InputServlet extends HttpServlet {
 		response.setContentType("text/html;charset=EUC-KR");
 		
 		String id  = request.getParameter("id");
-		int age = Integer.parseInt(request.getParameter("age"));
+		String pwd = request.getParameter("pwd");
 //		클래스 호출	int 형변환		객체     호출 
 		PrintWriter out = response.getWriter();
 		out.print("<body><html>");
@@ -42,7 +42,7 @@ public class InputServlet extends HttpServlet {
 		out.print("아이디:");
 		out.print(id);
 		out.print("<br>나이:");
-		out.print(age);
+		out.print(pwd);
 		out.print("<br><a href='javascript:history.go(-1)'>다시</a>");
 		out.print("</body></html>");
 		out.close();
@@ -54,6 +54,7 @@ public class InputServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		request.setCharacterEncoding("UTF-8");
 		doGet(request, response);
 	}
 

@@ -1,17 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript" src="alram.js"></script>
 </head>
 <body>
 <form method="get"action="InputServlet" name="frm">
-¾ÆÀÌµğ: <input type="text" name="id"><br>
-³ª &nbsp; ÀÌ: <input type="text" name="age"><br>
-<input type="submit" value="Àü¼Û" onclick="return check()">
+ì•„ì´ë””: <input type="text" name="id"><br>
+ë‚˜ &nbsp; ì´: <input type="password" name="pwd"><br>
+<input type="submit" value="ì „ì†¡" onclick="return check()">
 </form>
 
 </body>
