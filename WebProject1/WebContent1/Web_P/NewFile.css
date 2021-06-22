@@ -2,15 +2,16 @@
 
 
 table {
-      position: absolute;
-      /* 테이블 상하좌우 조정 */
-      left: 500px;
-      top: 350px;
+       margin-left:auto; 
+    	margin-right:auto;
+    	margin-top:20%;
+background: linear-gradient( to right, rgb(255, 255, 255), white );
     }
 font{
-
-	color: blue; 
-border: 1px solid White; 
+	background: linear-gradient( to right, rgb(255, 0, 0), yellow );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+border: none;
 }
 
 

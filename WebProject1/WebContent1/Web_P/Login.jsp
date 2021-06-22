@@ -7,21 +7,9 @@
   <meta charset="UTF-8">
   <title>Login Page </title>
 
-  <style>
-    table,
-    th,
-    td {}
 
-    table {
-      position: absolute;
-       /* 테이블 상하좌우 조정 */
-      left: 500px;
-      top: 350px;
-    }
-  </style>
-  <link rel="stylesheet" href="NewFile.css">
 </head>
-
+ <link rel="stylesheet" href="NewFile.css">
 <body>
   <form  name="log"action = "sessionLoginPro.jsp" method="post">
    <!-- 전송할 페이지(서버) 지정 -->
@@ -50,7 +38,7 @@
           <input type="submit"  value="로그인" >
            <!-- <input type="submit" value="로그인" <!-- onclick="alert('아이디와 비밀번호를 입력해주세요')">> -->
      <!-- 로그인버튼 추후 type 변경 예정 -->
-          <input type="button" value="아이디/비밀번호 찾기" onclick="location.href='Find ID password.html' ">
+          <input type="button" value="아이디/비밀번호 찾기" onclick="location.href='Find ID password.html'" >
         <!-- 회원 정보 찾기 type 추후 변경 예정 -->
           <input type="button" name="" value="회원가입" onclick="location.href='UserInfo.html'">
         </td>
