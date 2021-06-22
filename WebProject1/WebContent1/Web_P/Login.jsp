@@ -41,7 +41,7 @@
       </tr>
       <tr>
           <td>비밀번호 : </td>
-        <td><input type="password" name="pw" maxlength="20"></td>
+        <td><input type="password" name="pw" maxlength="15"></td>
          <!-- 비밀번호 입력값 8자리 제한 -->
       </tr>
       <tr>

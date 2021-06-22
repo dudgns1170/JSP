@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<input type="checkbox" name="item" value="½Å¹ß">
-
+<%= request.getParameter("name") %>
 </body>
 </html>

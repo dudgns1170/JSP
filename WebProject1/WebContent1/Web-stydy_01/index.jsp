@@ -6,6 +6,8 @@
    page - 해당 JSP 페이지의 전반적인 환경설정
   ex- <%@ page extends="java.efs.jp,gdd" %>
   ex- <%@ page import ="java.util.cfads"%>
+  
+  
    include - 현제 페이지에 다르 파일의 내용을 삽입시 사용 
    ex- <%@ include file ="foter.jsp"%>
    tagilb - 태그 라이브러리에서 태그를 꺼내와서 사용할 수 있는 제공
@@ -36,6 +38,9 @@ public int abs(int v){
 <h1> login! </h1>
 <%-- 스크립트 문--%> 
 <%--JSP 테그  --%>
+<%
+out.print("Hello Jsp");
+%>
 <%
 
 out.print(Str);

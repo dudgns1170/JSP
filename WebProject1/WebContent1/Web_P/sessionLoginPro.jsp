@@ -15,7 +15,8 @@ String id = request.getParameter("id");
 String pw = request.getParameter("pw");
 
 // 기존 DB의 사용자 ID, PW
-String dbId = "minky", dbPw = "minky";
+String dbId = "minky", dbPw = "minky12";
+
 
 if (dbId.equals(id)) {
 	if (dbPw.equals(pw)) {
