@@ -1,4 +1,4 @@
-<%@page import="javax.naming.spi.DirStateFactory.Result"%>
+ <%@page import="javax.naming.spi.DirStateFactory.Result"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="java.sql.DriverManager"%>
