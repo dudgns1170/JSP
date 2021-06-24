@@ -8,7 +8,7 @@ table {
 background: linear-gradient( to right, rgb(255, 255, 255), white );
     }
 font{
-	background: linear-gradient( to right, rgb(255, 0, 0), yellow );
+	background: linear-gradient( to right, rgb(255, 255, 230), Purple );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 border: none;
@@ -16,18 +16,31 @@ border: none;
 
 .btn
 {
-	position: absolute;
-	margin-left:auto; 
-    margin-right:auto;
+	margin: auto;
+   width: 100%;
+}
+.btn1
+{
+	margin: auto;
+   width: 100%;
+}
+.btn2
+{
+	margin: auto;
+   width: 100%;
 }
 #put1 {
-	display: block;
-	width: 100px;
-	height:69px; 
-	font-size: 11px;
-	text-align: center;
-	line-height:69px;
-	font-weight: bold;
+	padding: 5px;
+
+   width: 100%;
+
+   font-size: 18px;
+   
+	border-radius:10px;
+	border: none;
+	background: linear-gradient( rgb(211, 211, 255), black );
+	color: white;
+	
 }
 
 @media(max-width:800px ){
@@ -35,9 +48,7 @@ border: none;
       position: absolute;
       /* 테이블 상하좌우 조정 */
       left: 500px;
-      top: 350px;
-      
-    }
+      top: 350px;    }
 	font{
 
 	color: black; 

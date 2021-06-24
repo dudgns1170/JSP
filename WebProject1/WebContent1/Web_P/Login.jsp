@@ -36,14 +36,18 @@
         <td colspan="3" align=center>
           <br>
           <div class="btn">
-          <input id="put1" type="submit"  value="로그인"  ></div>
-           <!-- <input type="submit" value="로그인" <!-- onclick="alert('아이디와 비밀번호를 입력해주세요')">> -->
-     <!-- 로그인버튼 추후 type 변경 예정 -->
+          <input id="put1" type="submit"  value="로그인"  >
+          </div>
           <br>
-          <br>
-          </a><input type="button" value="아이디/비밀번호 찾기" onclick="location.href='Find ID password.html'" >
+           <div class="btn1">
+           비밀번호를 잊으셨습니까?
+          <input type="button" value="비밀번호 찾기" onclick="location.href='Find ID password.html'" >
+           </div>
         <!-- 회원 정보 찾기 type 추후 변경 예정 -->
-          <input type="button" name="" value="회원가입" onclick="location.href='UserInfo.html'">
+         <div class="btn2">
+          
+        	<input type="button" name="" value="회원가입" onclick="location.href='Sign_up_2.jsp'">
+		</div>        
         </td>
       </tr>
     </table>
