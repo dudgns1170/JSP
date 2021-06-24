@@ -23,6 +23,7 @@ border: none;
 {
 	margin: auto;
    width: 100%;
+   
 }
 .btn2
 {
@@ -40,7 +41,12 @@ border: none;
 	border: none;
 	background: linear-gradient( rgb(211, 211, 255), black );
 	color: white;
-	
+}
+#put2{
+		border-radius:10px;
+	border: none;
+	background-color:white;
+	color: black;
 }
 
 @media(max-width:800px ){
