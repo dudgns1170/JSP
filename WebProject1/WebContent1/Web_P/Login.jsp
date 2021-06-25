@@ -9,6 +9,7 @@
 
 
 </head>
+
  <link rel="stylesheet" href="NewFile.css">
 <body>
   <form  name="log"action = "sessionLoginPro.jsp" method="post">
@@ -41,18 +42,31 @@
           <br>
            <div class="btn1">
            비밀번호를 잊으셨습니까?
-          <input id="put2"type="button" value="비밀번호 찾기" onclick="location.href='Find ID password.html'" >
+          <input id="put2"type="button" value="비밀번호 찾기" onclick="location.href='FindPw.jsp'" >
            </div>
         <!-- 회원 정보 찾기 type 추후 변경 예정 -->
          <div class="btn2">
           
-        	<input type="button" name="" value="Sign_up" onclick="location.href='Sign_up_2.jsp'">
-		</div>        
+        	<input id="put3" type="button" name="" value="Sign_up" onclick="location.href='Sign_up_2.jsp'">
+		</div>  
+		      
         </td>
       </tr>
     </table>
   </form>
-
+ <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+          Tawk_LoadStart = new Date();
+        (function() {
+          var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+          s1.async = true;
+          s1.src = 'https://embed.tawk.to/609632a5185beb22b30b4590/1f55bbm6p';
+          s1.charset = 'UTF-8';
+          s1.setAttribute('crossorigin', '*');
+          s0.parentNode.insertBefore(s1, s0);
+        })();
+      </script>
 </body>
 
 </html>

@@ -1,14 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
 
+</head>
+
+<body>
+
+<%@include file="header.jsp" %>
+
+<div style="border: 1px solid red; margin-top:400px ">
+
+  <form  name="log"action = "sessionLoginPro.jsp" method="post">
   
-  아이디를 입력해주세요: <input type="text" name="id">
+  <div>
+  아이디를 입력해주세요: <input type="text" name="id"  >
  <br>
+ </div>
+ 
+  <div>
   비밀번호 찾기 힌트 선택: <select style="width:100%" name="question">
                             <option value="">문제 선택</option>
                             <option value="01">나의 보물 1호는?</option>
@@ -20,15 +33,11 @@
                             <option value="07">자신의 장래희망은?</option>
                        
                         </select>
+                     </div>
    답:<input type="text" name ="answer">
-   <input type="button" name ="id" value="확인">
-   
+   <input type="button" name="pw" value="확인">
  
-   
-  
-  
-  
-  </form>
-
-  </body>
+   </form>
+   </div>  
+</body>
 </html>
