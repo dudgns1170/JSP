@@ -14,7 +14,7 @@
 
 <div style="border: 1px solid red; margin-top:400px ">
 
-  <form  name="log"action = "sessionLoginPro.jsp" method="post" >
+  <form  name="log"action = "NweFindPw.jsp" method="post" >
   
   <div style="padding: 20px 20px;">
   아이디를 입력해주세요: <input type="text" name="id" >
@@ -33,8 +33,8 @@
                        
                         </select>
                      </div>
-   답:<input type="text" name ="answer">
-   <input type="button" name="pw" value="확인">
+   답:<input type="text" name ="answer" style="border: 1px">
+   <input type="submit" name="pw" value="확인">
  
    </form>
    </div>  
