@@ -14,15 +14,14 @@
 
 <div style="border: 1px solid red; margin-top:400px ">
 
-  <form  name="log"action = "sessionLoginPro.jsp" method="post">
+  <form  name="log"action = "sessionLoginPro.jsp" method="post" >
   
-  <div>
-  아이디를 입력해주세요: <input type="text" name="id"  >
- <br>
+  <div style="padding: 20px 20px;">
+  아이디를 입력해주세요: <input type="text" name="id" >
  </div>
  
-  <div>
-  비밀번호 찾기 힌트 선택: <select style="width:100%" name="question">
+  <div style="padding: 20px 20px;">
+  비밀번호 찾기 힌트 선택: <select style="width:300px" name="question" >
                             <option value="">문제 선택</option>
                             <option value="01">나의 보물 1호는?</option>
                             <option value="02">가장 기억에 남는 선생님 성함은?</option>
