@@ -21,7 +21,7 @@
  </div>
  
   <div style="padding: 20px 20px;">
-  비밀번호 찾기 힌트 선택: <select style="width:300px" name="question" >
+  비밀번호 찾기 힌트 선택: <select id = "questions"style="width:300px" name="question" >
                             <option value="">문제 선택</option>
                             <option value="01">나의 보물 1호는?</option>
                             <option value="02">가장 기억에 남는 선생님 성함은?</option>
