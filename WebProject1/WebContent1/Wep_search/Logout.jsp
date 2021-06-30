@@ -13,9 +13,9 @@
     alert("로그아웃 되었습니다.")</script>
 <% 
 // 1: 기존의 세션 데이터를 모두 삭제
-    session.invalidate();ㅈ
+    session.invalidate();
     // 2: 로그아웃 후 홈 으로이동
-    response.sendRedirect("search.jsp");
     %>
+        response.sendRedirect("search.jsp");
 </body>
 </html>
