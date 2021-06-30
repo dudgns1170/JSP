@@ -87,6 +87,6 @@ grid-template-rows : 350px 1000px;
 	  </ul>
 	</div>
 	</div>
-	
+	<input type="button" value="로그아웃" onclick="location.href='Logout.jsp'">
 </body>
 </html>

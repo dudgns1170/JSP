@@ -53,7 +53,7 @@
 					<a href="#" class="nav">장바구니</a>
 					</li>
 					<li class="nav_item">
-					<a href="#" class="nav">로그인</a>
+					<a href="Login.jsp" class="nav" >로그인</a>
 					</li>
 					<li class="nav_item">
 					<a href="#" class="nav">회원가입</a>
