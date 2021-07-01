@@ -20,14 +20,14 @@
 			"jdbc:oracle:thin:@localhost:1521:orcl","ora_user","young");
 	Statement stmt = conn.createStatement();
 	
-	ResultSet rs = stmt.executeQuery("select * from employees");
+	ResultSet rs = stmt.executeQuery("select * from member");
 	
 	//rs.previous() 현재의 행해서 한행 뒤로 이동
 	//rs.first(); 현재의 행에서 첫번쨰 행의 위치로 이동
 	
 	while (rs.next()) // 현재의 행에서 한행 앞으로 이동 
 	{
-		out.print("<h4>"+rs.getString("employee_id")+"&nbsp&nbsp&nbsp" + rs.getString("salary")+"</h4>");
+		out.print("<h4>"+rs.getString("userid")+"&nbsp&nbsp&nbsp" + rs.getString("name")+"</h4>");
 		
 	}
 	stmt.close();
