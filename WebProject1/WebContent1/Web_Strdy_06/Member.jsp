@@ -3,8 +3,8 @@
     <%
     request.setCharacterEncoding("UTF-8");
     %>
-    <jsp:useBean id="member" class="com.seayan.javabeans.MemberBean"/>
-    <jsp:setProperty property="*" name="member"/>
+ <jsp:useBean id="member" class="com.seayan.javabeans.MemberBean"/>
+ <jsp:setProperty property="*" name="member"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,13 +24,11 @@
 <td><jsp:getProperty property="userid" name="member"/></td>
 </tr>
 <tr>
-<td>별병</td>
-<td><jsp:getProperty property="nickname" name="member"></td>
-
+<td><jsp:getProperty property="nickname" name="member"/>   </td>
 </tr>
 <tr>
 <td>비밀번호</td>
-<td><jsp:getProperty property="pwd" name="member"></td>
+<td><jsp:getProperty property="pwd" name="member"/></td>
 </tr>
 <tr>
 <td>이메일</td>
