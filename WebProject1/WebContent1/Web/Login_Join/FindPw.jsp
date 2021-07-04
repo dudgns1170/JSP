@@ -13,10 +13,10 @@
 
 <div style="border: 1px solid red; margin-top:400px ">
 
-  <form  name="log"action = "NweFindPw.jsp" method="post" >
+  <form  name="log"action = "NewFile1.jsp" method="post" >
   
   <div style="padding: 20px 20px;">
-  아이디를 입력해주세요: <input type="text" name="name" >
+  id 입력해주세요: <input type="text" name="id" >
  </div>
  
   <div style="padding: 20px 20px;">
@@ -32,8 +32,8 @@
                        
                         </select>
                      </div>
-   번호 입력 :<input type="text" name ="answer" style="border: 1px">
-   <input type="submit" name="pho" value="확인">
+   답 :<input type="text" name ="answer" style="border: 1px">
+   <input type="submit" name="answer1" value="확인" >
  
    </form>
    </div>  
