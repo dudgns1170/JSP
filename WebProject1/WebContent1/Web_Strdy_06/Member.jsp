@@ -24,6 +24,7 @@
 <td><jsp:getProperty property="userid" name="member"/></td>
 </tr>
 <tr>
+<td>별명 </td>
 <td><jsp:getProperty property="nickname" name="member"/>   </td>
 </tr>
 <tr>
@@ -32,12 +33,13 @@
 </tr>
 <tr>
 <td>이메일</td>
-<td><jsp:getProperty property="email" name="member"/>e</td>
+<td><jsp:getProperty property="email" name="member"/></td>
 </tr>
 <tr>
 <td>전화번호</td>
-<td><jsp:getProperty property="phone" name="member"/>e</td>
+<td><jsp:getProperty property="phone" name="member"/></td>
 </tr>
+
 </table>
 </body>
 </html>

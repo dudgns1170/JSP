@@ -35,6 +35,7 @@
 <td>전화번호</td>
 <td><input type="text" name= "phone" size="20"></td>
 </tr>
+
 <tr>
 <td><input type="submit" value="취소"></td>
 <td><input type="submit" value="전송"></td>

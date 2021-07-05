@@ -1,5 +1,4 @@
-
-<%@page import="com.sun.xml.internal.fastinfoset.util.PrefixArray"%>
+<%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
@@ -11,12 +10,13 @@
 <%!
 //선언부는 첫 방문자에 의해서 단 한번 수행합니다.
    Connection conn = null;
-   Statement stmt = null;
-   ResultSet rs = null;
+  //  Statement stmt = null;
+//   ResultSet rs = null;
+   PreparedStatement ptms =null;
    String url = "jdbc:oracle:thin:@lacalhost:1521:orcl";
    String uid = "ora_user";
    String pwd = "1234";
-   String sql = "select * from member";
+   String sql = "insert into member valuse(?,?,?,?,?)";
    //삽입 ex
    // String inserSql = "insert into member valuse()";
    //삽입 간단 ex
@@ -31,49 +31,55 @@
 <title>title</title>
 </head>
 <body>
-   <table width="800" border="1">
-      <tr>
-         <th>이름</th>
-         <th>아이디</th>
-         <th>암호</th>
-         <th>이메일</th>
-         <th>전화번호</th>
-         <th>권한(1:관리자, 2: 일반회원)</th>
-      </tr>
-      <%
-         try{
-        	 //            오라클 연동 하는법
-            Class.forName("oracle.jdbc.driver.OracleDriver");
-        	 //  컨넥션 생성 
-            conn = DriverManager.getConnection(url, uid, pwd);
-        	 // 쿼리를 통하여 sql 실행 
-            rs = stmt.executeQuery(sql);
-            while (rs.next()){
-            	//출력 구문 
-               out.println("<tr>");
-               out.println("<td>"+rs.getString("name")+ "</td>");
-               out.println("<td>"+rs.getString("userid")+ "</td>");
-               out.println("<td>"+rs.getString("pwd")+ "</td>");
-               out.println("<td>"+rs.getString("email")+ "</td>");
-               out.println("<td>"+rs.getString("phone")+ "</td>");
-               out.println("<td>"+rs.getString("admin")+ "</td>");
-               out.println("</tr>");
-            } //while 끝
-         // 업데이트 문 에시
-         //stmt.executeUpdate(insersql);
-         } catch(Exception e){
-            e.printStackTrace();
-         } finally{
-            try{
-            	//문제가 생기지 않으면 발생 x
-               if(rs != null) rs.close();
-               if(stmt != null) stmt.close();
-               if(conn != null) conn.close();
-            } catch(Exception e){
-               e.printStackTrace();
-            }
-         }
-      %>
-   </table>
+<%
+request.setCharacterEncoding("UTF-8");
+String name = request.getParameter("name");
+String userid = request.getParameter("userid");
+String pwd = request.getParameter("pwd");
+String email = request.getParameter("email");
+String phone = request.getParameter("phone");
+String admin = request.getParameter("admin");
+
+
+try{
+	// jdbc 드라이버 로드
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	//db연결
+	conn= DriverManager.getConnection(url, uid, pwd);
+			//Statement  객체 생성
+	ptms = conn.prepareStatement(sql);
+			///바인딩 변수 할당
+	ptms.setString(1, name);
+	ptms.setString(2, userid);
+	ptms.setString(3, pwd);
+	ptms.setString(4, email);
+	ptms.setString(5, phone);
+	//ptms.setInt(6, Integer.parseInt(admin));
+	//SQL실행문 결과 처리
+	ptms.executeUpdate();
+} catch(Exception e)
+{
+	e.printStackTrace();
+	}
+finally{
+	try{
+		//사용한 리소스 해제
+		if(ptms != null)
+			ptms.close();
+		if(conn != null)
+			conn.close();
+	}catch(Exception e)
+	{
+		e.printStackTrace();
+	}
+}
+
+
+
+
+
+%>
+      
+     
 </body>
 </html>

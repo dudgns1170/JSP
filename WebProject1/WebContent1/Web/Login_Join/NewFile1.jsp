@@ -28,6 +28,7 @@ try {
 	// 이 쿼리문을 실핼 하곘다.
 
 	rs.next();
+	   String result = rs.getString("cust_pw");
 
 %>
 
@@ -38,8 +39,10 @@ try {
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
-</head>
+
+<title>내 비밀번호 찾기</title>
+<script>alert("비밀번호는 " + <%out.print(rs);%> +" 입니다.")
+      location.href='loginForm.jsp'
 
 <body>
 	<%=rs.getString("cust_pw")%>
@@ -50,9 +53,12 @@ try {
 <%
 } catch (Exception e) {
 e.printStackTrace();
+out.println("입력하신 정보가 일치하지 않습니다.");
 out.println("<script>");
-out.println("alert('입력하신 회원은 없습니다.')");
+out.println("location.href='loginForm.jsp'");
+out.println("alert('로그인 페이지로 이동합니다.')");
 out.println("</script>");
+
 }
 %>
 
