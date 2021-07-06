@@ -7,16 +7,17 @@
 <title>Insert title here</title>
 
 </head>
-
+<link rel="stylesheet" href="Findpw.css">
 <body>
 
-
-<div style="border: 1px solid red; margin-top:400px ">
+<font>비밀번호 찾기</font>
+<div class="div1">
 
   <form  name="log"action = "NewFile1.jsp" method="post" >
   
+
   <div style="padding: 20px 20px;">
-  id 입력해주세요: <input type="text" name="id" >
+  아이디 입력해주세요: <input type="text" name="id" >
  </div>
  
   <div style="padding: 20px 20px;">
@@ -32,8 +33,8 @@
                        
                         </select>
                      </div>
-   답 :<input type="text" name ="answer" style="border: 1px">
-   <input type="submit" name="answer1" value="확인" >
+   답 : <input type="text" name ="answer" style="border: 1px" class="ans">
+   <input type="submit" name="answer1" value="확인"  >
  
    </form>
    </div>  

@@ -53,10 +53,9 @@ try {
 <%
 } catch (Exception e) {
 e.printStackTrace();
-out.println("입력하신 정보가 일치하지 않습니다.");
 out.println("<script>");
 out.println("location.href='loginForm.jsp'");
-out.println("alert('로그인 페이지로 이동합니다.')");
+out.println("alert('일치하는 정보가 없습니다.)");
 out.println("</script>");
 
 }

@@ -37,20 +37,18 @@
       <tr>
         <td colspan="3" align=center>
           <br>
-          <div class="btn">
-          <input id="put1" type="submit"  value="로그인" >
+          <div>
+          <input class="btn hover1"  type="submit"  value="로그인" >
           </div>
           <br>
-           <div class="btn1">
+  
+          
+        	<input class="btn hover3" type="button" name="" value="Sign_up" onclick="location.href='joinForm.jsp'">
+	
+		       <div class="btn1">
            비밀번호를 잊으셨습니까?
           <input id="put2"type="button" value="비밀번호 찾기" onclick="location.href='FindPw.jsp'" >
            </div>
-        <!-- 회원 정보 찾기 type 추후 변경 예정 -->
-         <div class="btn2">
-          
-        	<input id="put3" type="button" name="" value="Sign_up" onclick="location.href='joinForm.jsp'">
-		</div>  
-		      
         </td>
       </tr>
     </table>
