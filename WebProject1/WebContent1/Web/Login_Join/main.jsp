@@ -15,7 +15,7 @@ String id = (String) session.getAttribute("cust_id");
 %>
 <h1>Main page</h1>
 <%=id %> 님이 로그인하였습니다.
-<input type="button" onclick="location.href='loginForm.jsp'" value="LogOut" />
+<input type="button" onclick="location.href='Tsetsp.jsp'" value="LogOut" />
 <a href="Test1.jsp">두 번쨰 페이지 입니다.</a>
 </body>
 </html>

@@ -16,10 +16,10 @@ ResultSet rs = null;
 
 try {
 	Context init = new InitialContext(); // 커넥션 풀을 이용하여 DB 연동
-	DataSource ds = (DataSource) init.lookup("java:comp/env/jdbc/OracleDB"); // connection name 불러오기
+	DataSource ds = (DataSource) init.lookup("java:comp/env/jdbc/myoracle"); // connection name 불러오기
 	conn = ds.getConnection();
 
-	pstmt = conn.prepareStatement("select *  from cust_info where cust_id =? and cust_answer =? and cust_question =?");
+	pstmt = conn.prepareStatement("select *  from members where cust_id =? and cust_answer =? and cust_question =?");
 	pstmt.setString(1, id);
 	pstmt.setString(2, answer);
 	pstmt.setString(3, question);
