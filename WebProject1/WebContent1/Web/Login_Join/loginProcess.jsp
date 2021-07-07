@@ -34,13 +34,17 @@
 			   if(password.equals(rs.getString("cust_pw"))){ 
 			    session.setAttribute("cust_id",id);
 			    out.println("<script>");
+			    out.println("alert('로그인 성공')");
+			    out.println("alert('로그인 성공')");
 			    out.println("location.href='main.jsp'"); //저장된 정보와 아이디와 비밀번호가 일치하면 main.jsp로 보낸다.
 			    out.println("</script>");
 			   }
 			  }
 			  out.println("<script>");
 			  out.println("location.href='loginForm.jsp'");  // 일치하지 않으면 loginForm.jsp로 되돌아감
+			  out.println("alert('아이디/비밀번호를 확인해주세요')");
 			  out.println("</script>");
+			  
 			 }catch(Exception e){
 			  e.printStackTrace();
 			 }
